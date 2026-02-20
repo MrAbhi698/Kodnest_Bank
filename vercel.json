@@ -19,7 +19,11 @@
             "destination": "/server/server.js"
         },
         {
-            "source": "/(.*)",
+            "source": "/assets/(.*)",
+            "destination": "/client/assets/$1"
+        },
+        {
+            "source": "/((?!api|assets).*)",
             "destination": "/client/index.html"
         }
     ]
